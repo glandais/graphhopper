@@ -44,6 +44,7 @@ public class EncodingManager
     public static final String BIKE2 = "bike2";
     public static final String RACINGBIKE = "racingbike";
     public static final String MOUNTAINBIKE = "mtb";
+    public static final String GRAVELBIKE = "gravelbike";
     public static final String FOOT = "foot";
     public static final String MOTORCYCLE = "motorcycle";
 
@@ -151,6 +152,9 @@ public class EncodingManager
 
             else if (entry.equals(MOUNTAINBIKE))
                 fe = new MountainBikeFlagEncoder(configuration);
+
+            else if (entry.equals(GRAVELBIKE))
+                fe = new GravelBikeFlagEncoder(configuration);
 
             else if (entry.equals(FOOT))
                 fe = new FootFlagEncoder(configuration);
