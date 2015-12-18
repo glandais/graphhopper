@@ -91,18 +91,18 @@ public class GravelBikeFlagEncoder extends BikeCommonFlagEncoder
         setSurfaceSpeed("sand", PUSHING_SECTION_SPEED / 2);
         setSurfaceSpeed("wood", PUSHING_SECTION_SPEED / 2);
 
-        setHighwaySpeed("living_street", 6);
+        setHighwaySpeed("living_street", 12);
         setHighwaySpeed("steps", PUSHING_SECTION_SPEED / 2);
 
-        setHighwaySpeed("cycleway", 18);
-        setHighwaySpeed("path", PUSHING_SECTION_SPEED / 2);
-        setHighwaySpeed("footway", PUSHING_SECTION_SPEED);
-        setHighwaySpeed("pedestrian", PUSHING_SECTION_SPEED);
         setHighwaySpeed("road", 12);
         setHighwaySpeed("track", 18);
+        setHighwaySpeed("path", 12);
         setHighwaySpeed("service", 14);
-        setHighwaySpeed("unclassified", 16);
         setHighwaySpeed("residential", 16);
+        setHighwaySpeed("unclassified", 16);
+        setHighwaySpeed("cycleway", 18);
+        setHighwaySpeed("footway", 12);
+        setHighwaySpeed("pedestrian", 12);
 
         setHighwaySpeed("trunk", 18);
         setHighwaySpeed("trunk_link", 18);
@@ -113,8 +113,6 @@ public class GravelBikeFlagEncoder extends BikeCommonFlagEncoder
         setHighwaySpeed("tertiary", 18);
         setHighwaySpeed("tertiary_link", 18);
 
-        addPushingSection("footway");
-        addPushingSection("pedestrian");
         addPushingSection("steps");
 
         setCyclingNetworkPreference("icn", PREFER.getValue());
@@ -138,6 +136,9 @@ public class GravelBikeFlagEncoder extends BikeCommonFlagEncoder
         preferHighwayTags.add("service");
         preferHighwayTags.add("residential");
         preferHighwayTags.add("unclassified");
+        preferHighwayTags.add("cycleway");
+        preferHighwayTags.add("footway");
+        preferHighwayTags.add("pedestrian");
 
         potentialBarriers.add("kissing_gate");
         setSpecificBicycleClass("touring");
